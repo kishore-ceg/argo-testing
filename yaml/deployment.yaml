@@ -14,11 +14,11 @@ spec:
         app: web
     spec:
       containers:
-        - name: back-end
+        - name: kafka-integrator
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/kafka-integrator:latest
           args: ["--spring.profiles.active=dev"]
           ports:
             - containerPort: 3000
           env:
           - name: spring.profiles.active
-            value: "dev"
+            value: dev
