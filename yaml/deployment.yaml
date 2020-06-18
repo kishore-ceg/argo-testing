@@ -19,5 +19,5 @@ spec:
           ports:
             - containerPort: 3000
           env:
-            - name: SPRING_PROFILES_ACTIVE
+            - name: -Dspring.profiles.active
               value: "dev"
