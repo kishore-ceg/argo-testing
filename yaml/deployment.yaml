@@ -16,6 +16,6 @@ spec:
       containers:
         - name: kafka-integrator
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/kafka-integrator:latest
-          args: ["--spring.profiles.active=dev"]
+          args: ["--Dspring.profiles.active=dev"]
           ports:
             - containerPort: 3000
