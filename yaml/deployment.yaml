@@ -9,13 +9,7 @@ metadata:
   namespace: argocd
 spec:
   replicas: 1
-  selector:
-    matchLabels:
-      app: web
   template:
-    metadata:
-      labels:
-        app: web
     spec:
       containers:
         - name: kafka-integrator
