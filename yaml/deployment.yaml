@@ -16,8 +16,9 @@ spec:
       containers:
         - name: back-end
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/kafka-integrator:latest
+          args: ["--spring.profiles.active=dev"]
           ports:
             - containerPort: 3000
           env:
-          - name: SPRING_PROFILES_ACTIVE
+          - name: spring.profiles.active
             value: "dev"
