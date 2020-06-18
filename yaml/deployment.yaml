@@ -1,10 +1,6 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  labels:
-    app: argo-demo
-    env: dev
-    tier: backend
   name: argo-demo
   namespace: argocd
 spec:
@@ -13,12 +9,11 @@ spec:
     matchLabels:
       app: web
   template:
+    metadata:
+      labels:
+        app: web
     spec:
       containers:
-        - name: kafka-integrator
+        - name: back-end
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/kafka-integrator:latest
-          ports:
-            - containerPort: 3000
-          env:
-            - name: spring.profiles.active
-              value: dev
+          ports: 3000
