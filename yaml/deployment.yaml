@@ -19,5 +19,5 @@ spec:
           ports:
             - containerPort: 3000
           env:
-          - name: spring.profiles.active
+          - name: DOCKER_ENV
             value: "dev"
