@@ -18,3 +18,6 @@ spec:
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:v10
           ports:
             - containerPort: 3000
+          env:
+          - name: DOCKER_ENV
+            value: "dev"
