@@ -19,6 +19,3 @@ spec:
           args: ["--spring.profiles.active=dev"]
           ports:
             - containerPort: 3000
-          env:
-          - name: spring.profiles.active
-            value: dev
