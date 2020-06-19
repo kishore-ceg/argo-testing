@@ -21,8 +21,6 @@ spec:
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/argo-demo:latest
           ports:
             - containerPort: 5000
-#             Below lines Needed only for java image
-#             Enable them only when you run for java image
           env:
           - name: DOCKER_ENV
             value: "dev"
