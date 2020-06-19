@@ -15,9 +15,14 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:v10
+#         uncomment and update with Java image
+#           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:v10
+#         OR uncomment and update with python image
+          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/python-example:latest
           ports:
             - containerPort: 3000
-          env:
-          - name: DOCKER_ENV
-            value: "dev"
+#             Below lines Needed only for java image
+#             Enable them only when you run for java image
+#           env:
+#           - name: DOCKER_ENV
+#             value: "dev"
