@@ -16,9 +16,9 @@ spec:
       containers:
         - name: back-end
 #         uncomment and update with Java image
-          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:v10
+#           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:v10
 #         OR uncomment and update with python image
-#           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/python-example:latest
+          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/python-example:latest
           ports:
             - containerPort: 3000
 #             Below lines Needed only for java image
