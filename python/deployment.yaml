@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: back-end
-          image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:latest
+image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:new
           ports:
             - containerPort: 3000
           env:
