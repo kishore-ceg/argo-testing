@@ -18,7 +18,7 @@ spec:
         - name: back-end
           image: 440953937617.dkr.ecr.us-east-2.amazonaws.com/jenkins-integrator:latest
           ports:
-            - containerPort: 5000
+            - containerPort: 8072
           env:
           - name: DOCKER_ENV
             value: "dev"
@@ -35,7 +35,7 @@ metadata:
 spec:
   ports:
   - name: http
-    port: 5000
+    port: 8072
     protocol: TCP
     targetPort: http
   selector:
@@ -61,6 +61,6 @@ spec:
       paths:
       - backend:
           serviceName: argo-demo
-          servicePort: 5000
+          servicePort: 8072
         path: /
 ---
